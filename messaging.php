@@ -39,7 +39,7 @@
                     <div class="col-12 d-flex justify-content-between">
                         <!-- Logo Area -->
                         <div class="logo">
-                            <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                            <a href="https://llibkatec.co.ke/"><img src="img/core-img/logo.png" alt=""></a>
                         </div>
 
                         <!-- Top Contact Info -->
@@ -75,11 +75,11 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="products.html">Products</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="https://llibkatec.co.ke/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/services">Services</a></li>
+                                    <li><a href="/products">Products</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                                 </ul>
                             </div>
                             <!-- Nav End -->
@@ -106,7 +106,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                                <li class="breadcrumb-item active" aria-current="page">Messaging</li>
                             </ol>
                         </nav>
                     </div>
@@ -124,7 +124,7 @@
                 <div class="col-12">
                     <div class="section-heading wow fadeInUp">
                         <h2>Student Request</h2>
-                        <p>Rubicom Limited</p>
+                        <p>Llibkatec Limited</p>
                     </div>
                 </div>
             </div>
@@ -146,7 +146,7 @@
         $headers ="From: ".$email;
          if(mail($to,$subject,$message,$headers)){
             
-          echo " <b>Message Sent. Thank You $na  for your Message.<b>";
+          echo " <b>Message Sent. Thank You $name  for your Message.<b>";
 }
 
 else {
@@ -177,6 +177,7 @@ else {
 
    
 
+  
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area section-padding-100-0">
         <div class="container">
@@ -189,7 +190,7 @@ else {
                         <!-- Nav -->
                         <nav>
                         
-                                <p style="color: white"> Llibkatec Limited is a solution provider for customers who want to communicate and connect with consumers. We specialize in outdoor advertising, Corporate branding and general printing. We integrate product position and personality.....<a href="about.html" style="color: green">Read More</a> </p>
+                                <p style="color: white"> Llibkatec Limited is a solution provider for customers who want to communicate and connect with consumers. We specialize in outdoor advertising, Corporate branding and general printing. We integrate product position and personality.....<a href="/about" style="color: green">Read More</a> </p>
                                 
                            
                         </nav>
@@ -203,10 +204,10 @@ else {
                         <!-- Nav -->
                         <nav>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="https://llibkatec.co.ke/">Home</a></li>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/services">Services</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
                             </ul>
                         </nav>
                     </div>
