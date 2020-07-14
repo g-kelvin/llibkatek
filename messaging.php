@@ -43,7 +43,7 @@
                         </div>
 
                         <!-- Top Contact Info -->
-                       <div class="top-contact-info d-flex align-items-center">
+                        <div class="top-contact-info d-flex align-items-center">
                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="Cross House, Along Cross Road, Ngariama Road P.O Box 17674-00100 Nairobi"><img src="img/core-img/placeholder.png" alt=""> <span>Cross House, Along Cross Road, Ngariama Road P.O Box 17674-00100 Nairobi</span></a>
                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="info@llibkatec.co.ke"><img src="img/core-img/message.png" alt=""> <span>info@llibkatec.co.ke</span></a>
                         </div>
@@ -102,11 +102,11 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcrumb-content">
-                        <h2>Contact</h2>
+                        <h2>About us</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                                <li class="breadcrumb-item active" aria-current="page">About Us</li>
                             </ol>
                         </nav>
                     </div>
@@ -116,143 +116,66 @@
     </section>
     <!-- ##### Breadcrumb Area End ##### -->
 
-    <!-- ##### Contact Area Start ##### -->
-    <section class="contact-area section-padding-100-0">
+
+    <!-- ##### Featured Properties Area Start ##### -->
+    <section class="featured-properties-area section-padding-100-50">
         <div class="container">
             <div class="row">
-                <!-- Single Contact Area -->
-                <div class="col-12 col-lg-4">
-                    <div class="single-contact-area mb-100">
-                        <!-- Logo -->
-                        <a href="#" class="d-block mb-50"><img src="img/core-img/logo.png" alt=""></a>
-                        <p>Llibkatec Limited is a solution provider for customers who want to communicate and connect with consumers. We specialize in outdoor advertising, Corporate branding and general printing.<br>We integrate product position and... <a href="about.html">Read More</a></p>
-                    </div>
-                </div>
-
-                <!-- Single Contact Area -->
-                <div class="col-12 col-lg-4">
-                    <div class="single-contact-area mb-100">
-                        <div class="contact-advisor">
-                            <h5>Contact an advisor</h5>
-                            <!-- Single Advisor -->
-                            <div class="single-advisor d-flex align-items-center">
-                                <div class="advisor-img">
-                                    <img src="img/bg-img/25.jpg" alt="">
-                                </div>
-                                <div class="advisor-info">
-                                    <h6>Kennedy Kivuti</h6>
-                                    <span>Managing Director</span>
-                                    <p>+254 723 622 527</p>
-                                </div>
-                            </div>
-                            <!-- Single Advisor -->
-                            <div class="single-advisor d-flex align-items-center">
-                                <div class="advisor-img">
-                                    <img src="img/bg-img/26.jpg" alt="">
-                                </div>
-                                <div class="advisor-info">
-                                    <h6>Lydia Muthoni</h6>
-                                    <span>Manager Llibkatec</span>
-                                    <p>+254 720 783 312</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Contact Area -->
-                <div class="col-12 col-lg-4">
-                    <div class="single-contact-area mb-100">
-                        <div class="contact--area contact-page">
-                            <!-- Contact Content -->
-                            <div class="contact-content">
-                                <h5>Get in touch</h5>
-
-                                <!-- Single Contact Content -->
-                                <div class="single-contact-content d-flex align-items-center">
-                                    <div class="icon">
-                                        <img src="img/core-img/location.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p>Cross House, Along Cross Road, Ngariama Road <br>P.O Box 17674-00100 Nairobi</p>
-                                    </div>
-                                </div>
-                                <!-- Single Contact Content -->
-                                <div class="single-contact-content d-flex align-items-center">
-                                    <div class="icon">
-                                        <img src="img/core-img/call.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p>+254 723 622 527<br> +254 720 783 312</p>
-                                        <span>mon-sat , 08.am - 18 pm</span>
-                                    </div>
-                                </div>
-                                <!-- Single Contact Content -->
-                                <div class="single-contact-content d-flex align-items-center">
-                                    <div class="icon">
-                                        <img src="img/core-img/message2.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p>info@llibkatec.co.ke</p>
-                                        <span>we reply in 24 hrs</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-12">
+                    <div class="section-heading wow fadeInUp">
+                        <h2>Student Request</h2>
+                        <p>Rubicom Limited</p>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div class="row">
+
+                <p> <?php 
+    if(!isset($_POST['submit'])){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+
+        
+       
+        $to = "info@llibkatec.co.ke";
+        $subject ="Email from Website. Subjects is: ".$subject;
+        $message ="My Name is : ".$name. " of Email: ".$email." The Following is my message: ".$message;
+        $headers ="From: ".$email;
+         if(mail($to,$subject,$message,$headers)){
+            
+          echo " <b>Message Sent. Thank You $na  for your Message.<b>";
+}
+
+else {
+    echo "Not Sent";
+    
+}
+
+       
 
 
-        <!-- ##### Google Maps ##### -->
-        <div class="map-area">
+    }
+    else
+    {
+        echo "try again";
+    }
 
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.30139075692546!2d36.82503827648766!3d-1.2803085638819067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f112bade505f7%3A0x17a1244fbf2aedde!2sCross%20Road!5e0!3m2!1sen!2ske!4v1594670618606!5m2!1sen!2ske" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            <!-- Contact Area -->
-            <div class="contact---area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-8">
-                            <!-- Contact Area -->
-                            <div class="contact-form-area contact-page">
-                                <h4 class="mb-50">Send a message</h4>
+ ?></p>
 
-                                <form action="messaging.php" method="post">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="name" placeholder="Your Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" name="email" placeholder="Your E-mail">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="subject" placeholder="Your Subject">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <textarea name="message" class="form-control" name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="btn credit-btn mt-30" type="submit">Send</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+               
+                 
+               
             </div>
         </div>
     </section>
-    <!-- ##### Contact Area End ##### -->
+    <!-- ##### Featured Properties Area End ##### -->
+
+
+   
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area section-padding-100-0">
